@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album featuring temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Your Name">
+    <title>Temple Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <p class="site-title">Temple Album</p>
+
+            <button id="menu-button" class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="#" class="active">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+
+        <div class="temple-grid">
+            <figure>
+                <img src="images/accra.jpg" alt="Accra Ghana Temple" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/abuja.jpg" alt="Abuja Nigeria Temple" loading="lazy">
+                <figcaption>Abuja Nigeria Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/aba.jpg" alt="Aba Nigeria Temple" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/cape-town-south-africa-temple.jpg" alt="Lagos Nigeria Temple" loading="lazy">
+                <figcaption>Lagos Nigeria Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/durban-south-africa.jpg" alt="Durban South Africa Temple" loading="lazy">
+                <figcaption>Durban South Africa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/johannesburg-south-africa.jpg" alt="Johannesburg South Africa Temple" loading="lazy">
+                <figcaption>Johannesburg South Africa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/kinshasa-democratic-republic-of-the-congo.jpg" alt="Cape Town South Africa Temple" loading="lazy">
+                <figcaption>Cape Town South Africa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/lagos.jpg" alt="Kinshasa Democratic Republic of the Congo Temple" loading="lazy">
+                <figcaption>Kinshasa Democratic Republic of the Congo Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/nairobi-kenya-temple-60488-thumb.jpg" alt="Harare Zimbabwe Temple" loading="lazy">
+                <figcaption>Harare Zimbabwe Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Chodaton Luc | Benin
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
