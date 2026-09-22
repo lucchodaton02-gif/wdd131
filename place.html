@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Romania, its weather, population, area, and other interesting facts.">
+    <meta name="author" content="Chodaton Luc">
+    <title>Romania | Place</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Romania</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/Romania.jpg">
+                <source media="(min-width: 601px)" srcset="images/Roumania.jpg">
+                <img
+                    src="images/Roumania.jpg"
+                    alt="Beautiful landscape in Romania"
+                    width="1200"
+                    height="800"
+                >
+            </picture>
+        </section>
+
+        <section class="content">
+            <section class="card data">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>238,397 km²</dd>
+
+                    <dt>Population:</dt>
+                    <dd>About 19 million</dd>
+
+                    <dt>Capital:</dt>
+                    <dd>Bucharest</dd>
+
+                    <dt>Languages:</dt>
+                    <dd>Romanian</dd>
+
+                    <dt>Currency:</dt>
+                    <dd>Romanian Leu (RON)</dd>
+
+                    <dt>Continent:</dt>
+                    <dd>Europe</dd>
+                </dl>
+            </section>
+
+            <section class="card weather">
+                <h2>Weather</h2>
+
+                <div class="weather-icon">
+                    <span aria-hidden="true">⛅</span>
+                </div>
+
+                <div class="weather-info">
+                    <p><strong>Condition:</strong> Partly Cloudy</p>
+                    <p><strong>Temperature:</strong> 8 °C</p>
+                    <p><strong>Wind Speed:</strong> 12 km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Chodaton Luc | Romania
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #002b7f;
+    --secondary-color: #fcd116;
+    --accent-color: #ce1126;
+    --dark-color: #222;
+    --light-color: #f5f5f5;
+    --white-color: #fff;
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+header {
+    background: linear-gradient(
+        90deg,
+        var(--primary-color) 33%,
+        var(--secondary-color) 33%,
+        var(--secondary-color) 66%,
+        var(--accent-color) 66%
+    );
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--white-color);
+    text-shadow: 1px 1px 3px #000;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-top: 0;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.data dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.data dt {
+    font-weight: bold;
+}
+
+.data dd {
+    margin: 0 0 0.5rem;
+}
+
+.weather-info p {
+    margin: 0.8rem 0;
+}
+
+/* Weather icon for mobile */
+.weather-icon {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.weather-icon::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/weather.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
