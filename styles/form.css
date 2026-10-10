@@ -1,0 +1,157 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main form container */
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and fields */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #9aa9b7;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #bdcbd8;
+    border-radius: 6px;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+legend {
+    color: #17324d;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.rating label {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.rating input {
+    display: block;
+    margin: 0 auto 5px;
+    accent-color: #235789;
+}
+
+/* Checkboxes */
+fieldset input[type="checkbox"] {
+    accent-color: #235789;
+    width: 17px;
+    height: 17px;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #235789;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #17324d;
+}
+
+/* Keyboard accessibility */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e5a000;
+    outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .rating {
+        gap: 2px;
+    }
+
+    .rating label {
+        font-size: 0.9rem;
+    }
+}
