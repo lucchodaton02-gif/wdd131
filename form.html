@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Luc Chodaton">
-    <meta name="description" content="Share your thoughts about a product, rate your experience, and tell us which features you liked the most.">
+    <meta name="description"
+        content="Share your thoughts about a product, rate your experience, and tell us which features you liked the most.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Product Review Form</title>
@@ -20,43 +21,39 @@
 
     <main>
         <form method="get" action="review.html">
+
             <label for="productName">Product Name</label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select a Product ...</option>
-                <option value="product1">Product 1</option>
-                <option value="product2">Product 2</option>
-                <option value="product3">Product 3</option>
             </select>
 
             <fieldset>
                 <legend>Overall Rating</legend>
 
-                <div class="rating">
-                    <label for="rating1">
-                        <input type="radio" id="rating1" name="rating" value="1" required>
-                        ☆
-                    </label>
+                <label for="rating1">
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                    ☆
+                </label>
 
-                    <label for="rating2">
-                        <input type="radio" id="rating2" name="rating" value="2" required>
-                        ☆☆
-                    </label>
+                <label for="rating2">
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                    ☆☆
+                </label>
 
-                    <label for="rating3">
-                        <input type="radio" id="rating3" name="rating" value="3" required>
-                        ☆☆☆
-                    </label>
+                <label for="rating3">
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                    ☆☆☆
+                </label>
 
-                    <label for="rating4">
-                        <input type="radio" id="rating4" name="rating" value="4" required>
-                        ☆☆☆☆
-                    </label>
+                <label for="rating4">
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                    ☆☆☆☆
+                </label>
 
-                    <label for="rating5">
-                        <input type="radio" id="rating5" name="rating" value="5" required>
-                        ☆☆☆☆☆
-                    </label>
-                </div>
+                <label for="rating5">
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                    ☆☆☆☆☆
+                </label>
             </fieldset>
 
             <label for="installDate">Date of Installation</label>
@@ -93,6 +90,7 @@
             <input type="text" id="userName" name="userName">
 
             <input type="submit" value="Submit Review">
+
         </form>
     </main>
 
@@ -102,4 +100,5 @@
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
