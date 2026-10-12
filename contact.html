@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Benin Explorer with questions or ideas for discovering Benin.">
+    <meta name="author" content="Benin Explorer">
+    <title>Contact | Benin Explorer</title>
+
+    <link rel="stylesheet" href="styles/basee.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Benin Explorer</a>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="places.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="section-container">
+                <p class="eyebrow">Let's Talk About Your Trip</p>
+                <h1>Contact Benin Explorer</h1>
+                <p>
+                    Have a question, suggestion, or travel idea?
+                    Send us a message.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-container contact-layout">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>
+                    Use the form to send us your message.
+                    We would love to hear about your plans
+                    to discover Benin.
+                </p>
+
+                <h3>Before You Travel</h3>
+                <ul>
+                    <li>Check local travel conditions.</li>
+                    <li>Confirm opening hours and site access requirements.</li>
+                    <li>Respect local communities and the places you visit.</li>
+                </ul>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                        minlength="2"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Message Topic</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Choose a topic</option>
+                        <option value="destinations">Destinations</option>
+                        <option value="activities">Activities</option>
+                        <option value="culture">Culture and Heritage</option>
+                        <option value="other">Other Request</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        minlength="10"
+                    ></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">
+                        I would like to receive information about Benin.
+                    </label>
+                </div>
+
+                <button class="button" type="submit">Send Message</button>
+                <p id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Benin Explorer. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <a href="contact.html">Contact</a>
+            <a href="references.html">References</a>
+        </nav>
+    </footer>
+</body>
+</html>

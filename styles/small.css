@@ -1,0 +1,177 @@
+
+
+@media screen and (max-width: 767px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .section-container {
+        width: 90%;
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+    }
+
+    /* Header */
+    header {
+        position: relative;
+        flex-wrap: wrap;
+        padding: 0.9rem 5%;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    #menu-button {
+        display: block;
+    }
+
+    /* Mobile navigation */
+    #navigation {
+        display: none;
+        width: 100%;
+    }
+
+    #navigation.open {
+        display: block;
+    }
+
+    #navigation ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding-top: 0.75rem;
+    }
+
+    #navigation li {
+        width: 100%;
+    }
+
+    #navigation a {
+        padding: 0.85rem 0.5rem;
+        border-bottom: 1px solid var(--light-gray);
+    }
+
+    #navigation a[aria-current="page"] {
+        border-bottom: 1px solid var(--light-gray);
+        border-left: 4px solid var(--gold);
+        padding-left: 0.75rem;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 420px;
+        padding: 3rem 5%;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    /* Buttons */
+    .button {
+        max-width: 100%;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Featured section */
+    .featured {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* Cards */
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .destination-card img,
+    .activity-card img {
+        height: 220px;
+    }
+
+    /* Page banner */
+    .page-banner {
+        padding: 2.75rem 0;
+    }
+
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+
+    /* Call to action */
+    .call-to-action {
+        padding: 2.5rem 0;
+    }
+
+    /* Contact page */
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 1.25rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 5%;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Very small phones */
+@media screen and (max-width: 360px) {
+    .logo {
+        font-size: 1.05rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+}
